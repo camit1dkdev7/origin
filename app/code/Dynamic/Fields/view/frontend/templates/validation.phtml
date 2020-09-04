@@ -1,0 +1,44 @@
+<input type="text" name="test" data-validate="{required:true, 'aureatelabsvalidationrule':true}">
+
+
+<script type="text/x-magento-init">
+   {
+       "*": {
+           "aureatelabsMethod": {}
+       }
+   }
+</script>
+
+<div id="loader-example" data-mage-init='{"loader": { "icon": "{store URL}/static/{static version}/frontend/Magento/luma/en_US/images/loader-2.gif"}}'>
+    <h3>Block</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos itaque numquam placeat quam recusandae velit voluptas. Ad architecto asperiores eos eveniet id nostrum officiis saepe soluta totam voluptate! Debitis, quibusdam.
+</div>
+<script>
+require(['jquery', 'loader', 'domReady!'], function ($) {
+    'use strict';
+
+    $('#loader-example').trigger('processStart');
+});
+</script>
+
+<nav class="navigation" data-action="navigation">
+    <ul id="menu" data-mage-init='{"menu":{"responsive":true, "expanded":true, "delay": 200, "position":{"my":"left top","at":"left+10 top+30"}}}'>
+        <li class="level0 level-top ui-menu-item">Toys</li>
+        <li class="level0 level-top parent ui-menu-item">Electronics
+            <ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all">
+                <li class="ui-menu-item"><a href="#">Home Entertainment</a></li>
+                <li class="ui-menu-item"><a href="#">Routers</a></li>
+            </ul>
+        </li>
+        <li class="level0 level-top ui-menu-item">Music
+            <ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all">
+                <li class="ui-menu-item">
+                    <a href="#">Alternative</a>
+                </li>
+                <li class="ui-menu-item">
+                    <a href="#">Classic</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
